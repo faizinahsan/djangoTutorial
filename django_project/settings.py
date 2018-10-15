@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,3 +134,4 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'blog/static/blog/'), # build appropriate path
     'static'
 ]
+CRISPY_TEMPLATE_PACK='bootstrap4'
